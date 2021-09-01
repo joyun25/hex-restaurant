@@ -1,0 +1,154 @@
+.feature
+    padding-right: 62px
+    padding-left: 62px
+    background: $deep-bg
+    color: $font-color
+    @include mb500 
+        padding-right: 30px
+        padding-left: 30px
+.feature-title
+    text-align: center
+    padding-bottom: 30px
+    .line
+        @include line(13%, 3px, $font-color, 25px)
+        @include mb500
+            display: none
+    h2
+        display: inline-block
+        font-size: 20px
+        line-height: 32px
+        padding: 0 13px
+.cards
+    display: flex
+    justify-content: space-between
+    text-align: center
+    @include mb500
+        display: block
+    .card
+        width: 31%
+        @include mb500
+            width: 100%
+            margin-bottom: 25px
+        img
+            border-radius: 50%
+        h3
+            font-size: 18px
+            line-height: 24px
+            padding: 20px 0 10px 0
+            @include mb500
+            padding: 10px 0 5px 0
+        p
+            line-height: 21px
+            text-align: left
+.chef
+    background: $font-color
+    display: flex
+    @include mb500
+        display: block
+.chef-pic
+    background: url(../images/main_chef_brown.png) $banner-bg no-repeat right
+    flex: 1
+    max-width: 470px
+    height: 460px
+    @include mb500
+        margin-bottom: 25px
+.chef-text
+    flex: 1
+    color: $deep-bg
+    margin: auto 25px
+    @include mb500
+        padding-bottom: 25px
+        margin: auto 10px
+    h2
+        font-size: 20px
+        line-height: 32px
+    h3
+        line-height: 21px
+        padding-bottom: 16px
+    p
+        line-height: 21px
+.comment
+    background: $deep-bg
+    color: $font-color
+    h2
+        font-size: 24px
+        line-height: 32px
+        padding-bottom: 32px
+        text-align: center
+    .card
+        display: flex
+        img
+            margin-right: 13px
+            width: 67px
+            height: 67px
+        h3
+            padding: 20px 0 22px 0
+            text-align: left
+        p
+            line-height: 24px
+            padding-bottom: 16px
+        .sign
+            display: block
+            line-height: 24px
+            text-align: right
+.map
+    background: $light-bg
+    color: $font-color
+    h2
+        font-size: 24px
+        line-height: 32px
+        padding-bottom: 38px
+        text-align: center
+.map-content
+    display: flex
+    @include pad
+        display: block
+    img
+        display: block
+        margin-right: 20px
+        @include pad
+            margin: 0 auto 10px
+.order
+    display: flex
+    flex-direction: column
+    width: 100%
+    label
+        line-height: 20px
+    input
+        line-height: 22px
+        font-size: 16px
+        line-height: 32px
+        padding-left: 14px
+        margin: 6px 0 12px 0
+        border-radius: 3px
+    p
+        margin-bottom: 6px
+    .radio
+        label
+            padding-right: 6px
+            cursor: pointer
+        input
+            margin: 0 36px 0 0
+            cursor: pointer
+.red
+    color: red
+.btn
+    align-self: flex-end
+    margin-top: 22px
+    button
+        color: #fff
+        line-height: 32px
+        width: 70px
+        border-radius: 3px
+        border: none
+        margin-left: 12px
+        font-size: 16px
+        cursor: pointer
+    .minor-btn
+        background: $btn2-color
+    .minor-btn:hover
+        background: #929191
+    .main-btn
+        background: $btn1-color
+    .main-btn:hover
+        background: #ec6116

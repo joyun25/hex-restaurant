@@ -1,0 +1,33 @@
+@mixin clearfix
+    clear:both
+
+@mixin circle($size, $bgcolor)
+    border-radius: 50%
+    height: $size
+    width: $size
+    font-size: $size / 3
+    background: $bgcolor    
+
+@mixin img-hide-text
+    text-indent: 101%
+    white-space: nowrap
+    overflow: hidden
+
+@mixin hvr-line-left-to-right($line-color, $bgsize)
+    background-image: linear-gradient($line-color, $line-color)
+    background-position: left bottom
+    background-size: 0 $bgsize //例如4px
+    background-repeat: no-repeat
+    transition: background-size 0.18s linear
+    //需要再加上一段程式碼 :hover{background-size: 100% $bgsize;}
+
+@mixin ul-disc-inside
+    list-style: disc
+    list-style-position: inside
+
+@mixin line($line-width, $line-height, $line-color, $mb)
+    display: inline-block
+    width: $line-width
+    border-top: $line-height solid $line-color
+    margin-bottom: $mb
+

@@ -1,0 +1,154 @@
+.cart
+    background: $deep-bg
+    color: $font-color
+    display: flex
+    a
+        display: inline-block
+        color: $font-color
+        text-decoration: none
+    @include mb500
+        display: block
+.aside
+    max-width: 220px
+    width: 100%
+    margin-right: 20px
+    h2
+        font-size: 20px
+        line-height: 32px
+        margin-bottom: 16px
+    @include pad
+        max-width: 200px
+    @include mb500
+        max-width: 100%
+        margin-bottom: 25px
+.cart-menu
+    a
+        display: block
+        line-height: 32px
+        padding-left: 8px
+        border-bottom: 1px solid $font-color
+    a:hover
+        background: $font-color
+        color: $deep-bg
+.select
+    background: $font-color
+    color: $deep-bg
+.main
+    max-width: 700px
+    width: 100%
+.nav-bar
+    display: flex
+    justify-content: space-between
+    margin-bottom: 25px
+    @include pad
+        display: block
+.search
+    display: flex
+    max-width: 460px
+    width: 100%
+    @include pad
+        max-width: 100%
+        margin-bottom: 10px
+.search-term
+    max-width: 420px
+    width: 100%
+    font-size: 16px
+    border: 3px solid $font-color
+    border-right: none
+    padding: 5px
+    height: 30px
+    border-radius: 5px 0 0 5px
+    outline: none
+    color: $font-color
+    background: $deep-bg
+    @include pad
+        max-width: 100%
+.search-button 
+	width: 40px
+	height: 30px
+	border: 1px solid $font-color
+	background: $font-color
+	text-align: center
+	color: #fff
+	border-radius: 0 5px 5px 0
+	cursor: pointer
+	font-size: 16px
+.pay
+    display: flex
+    align-items: center
+    @include pad
+        display: none
+.to-pay
+    white-space: nowrap
+    padding: 0 17px
+    border-right: 1px solid $font-color
+.cart-shortcut
+    display: block
+    font-size: 27px
+    padding: 0 21px 0 17px
+.pay-mb
+    a
+        display: none
+        text-decoration: none
+        width: 50px
+        height: 50px
+        background: $font-color
+        border-radius: 50%
+        position: fixed
+        right: 10px
+        bottom: 10px
+        color: #fff
+        font-size: 25px
+        line-height: 50px
+        text-align: center
+        z-index: 100
+        @include pad
+            display: block
+.products
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    @include mb500
+        display: block
+.product
+    position: relative
+    max-width: 220px
+    margin-bottom: 30px
+    text-align: center
+    box-shadow: 1px 1px 8px gray
+    @include mb500
+        margin: 0 auto 30px
+    h2
+        font-size: 20px
+        line-height: 27px
+        padding-top: 11px
+    h4
+        font-size: 12px
+        line-height: 16px
+    .line
+        @include line(50%, 3px, $font-color, 20px)
+        margin-top: 8px
+    h3
+        font-size: 20px
+        line-height: 24px
+        font-weight: bold
+    .add-to-cart
+        line-height: 21px
+        padding: 3px 49px 4px 49px
+        border: 2px solid $box-top
+        border-radius: 3px
+        color: $box-top
+        margin: 13px auto 10px
+    .add-to-cart:hover
+        background: $box-top
+        color: #fff
+.heart
+    display: block
+    position: absolute
+    top: 8px
+    left: 8px
+    i
+        color: #fff
+        font-size: 20px
+    .red
+        color: #ff0000

@@ -1,0 +1,162 @@
+.l-p-row
+    padding-right: 42px
+    padding-left: 42px
+    @include mb500
+    padding-right: 21px
+    padding-left: 21px
+.l-p-col
+    padding-top: 50px
+    padding-bottom: 50px
+    @include mb500
+    padding-top: 25px
+    padding-bottom: 25px
+body
+    font-family: "Microsoft JhengHei"
+.wrap
+    max-width: 1024px
+    margin: 0 auto
+.header
+    position: relative
+.nav
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    background: $black-yarn
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 56px
+    h1
+        a
+            display: block
+            background: url(../images/logo_w@svg.svg) no-repeat center
+            width: 120px
+            height: 24px
+            @include img-hide-text
+.menu
+    display: flex
+    @include mb500
+        max-height: 0
+        overflow: hidden
+        transition: 0.8s
+        position: absolute
+        z-index: 200
+        top: 56px
+        left: 0
+        right: 0
+        display: block
+        background: #000000
+    a
+        display: block
+        text-decoration: none
+        padding: 0 6px
+        margin-left: 18px
+        color: #fff
+        line-height: 21px
+        font-weight: bold
+        @include hvr-line-left-to-right($btn1-color, 21px)
+        @include mb500
+            line-height: 40px
+            width: 100%
+            margin: 0
+            text-align: center
+            border-bottom: 1px solid #fff
+    a:hover
+        background-size: 100% 21px
+.showmenu
+    display: none
+    @include mb500
+        display: block
+        color: #fff
+        font-size: 25px
+.menu-show
+    .menu
+        @include mb500
+        max-height: 240px
+.banner
+    background: url(../images/header_desktop.png) $banner-bg no-repeat center 
+    height: 420px
+    display: flex
+    justify-content: center
+    align-items: center
+    @include mb500
+        background: url(../images/header_mobile.png) $banner-bg no-repeat center 
+.banner-text
+    background: $black-yarn
+    color: #fff
+    text-align: center
+    max-width: 460px
+    h2
+        font-size: 32px
+        padding: 20px 30px
+        line-height: 48px
+        @include mb500
+            font-size: 28px
+            padding: 20px 23px
+            line-height: 35px
+        br
+            display: none
+            @include mb500
+                display: block
+    p
+        line-height: 21px
+        padding-bottom: 26px
+
+.footer
+    background: $deep-bg
+    display: flex
+    color: $font-color
+    @include pad
+        display: block
+.about
+    flex: 1
+    @include pad
+        margin-bottom: 25px
+    h2
+        font-size: 24px
+        margin-bottom: 16px
+        @include mb500
+            margin-bottom: 10px
+    p
+        line-height: 21px
+.contact
+    flex: 1
+    @include pad
+        margin-bottom: 25px
+    h2
+        font-size: 24px
+        margin-bottom: 16px
+        @include mb500
+            margin-bottom: 10px
+    li
+        line-height: 21px
+        list-style: disc inside
+        a
+            text-decoration: none
+            color: $font-color
+.media
+    flex: 1
+    text-align: right
+    a
+        display: inline-block
+        img
+            width: 245px
+            height: 49px
+            margin-bottom: 22px
+            @include mb500
+                margin-bottom: 10px
+.media-list
+    display: flex
+    justify-content: flex-end
+    a
+        display: block
+        text-decoration: none
+        font-size: 31px
+        margin-left: 12px
+.fa-google-plus-square
+    color: $google-color
+.fa-twitter-square
+    color: $twi-color
+.fa-facebook-square
+    color: $fb-color
