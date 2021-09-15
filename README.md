@@ -9,4 +9,4 @@
 - RWD
 - jQuery
 #### 第三方插件：
-- font-awesome
+- [font-awesome](https://fontawesome.com/)
